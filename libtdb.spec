@@ -1,6 +1,6 @@
 Name: libtdb
 Version: 1.4.2
-Release: 1
+Release: 2
 Summary: The Tdb library
 License: LGPLv3+
 URL: http://tdb.samba.org/
@@ -10,6 +10,7 @@ BuildRequires: gcc libxslt docbook-style-xsl
 BuildRequires: python3-devel
 Provides: bundled(libreplace)
 Obsoletes: python2-tdb < 1.4.2-1
+Obsoletes: python2-samba
 
 %description
 Tdb library implements a trivial database.
@@ -88,6 +89,9 @@ make %{?_smp_mflags} check
 %ldconfig_scriptlets
 
 %changelog
+* Sat Mar 21 2020 songnannan <songnannan2@huawei.com> - 1.4.2-2
+- bugfix about update
+
 * Sat Feb 11 2020 openEuler Buildteam <buildteam@openeuler.org> - 1.4.2-1
 - update to 1.4.2-1, drop python2 support
 
