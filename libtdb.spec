@@ -1,6 +1,6 @@
 Name: libtdb
-Version: 1.4.2
-Release: 2
+Version: 1.4.3
+Release: 1
 Summary: The Tdb library
 License: LGPLv3+
 URL: http://tdb.samba.org/
@@ -89,6 +89,12 @@ make %{?_smp_mflags} check
 %ldconfig_scriptlets
 
 %changelog
+* Mon Jul 27 2020wenzhanli<wenzhanli2@huawei.com> - 1.4.3-1
+- Type:bugfix
+- ID:NA
+- SUG:NA
+- DESC:version update 1.4.3
+
 * Sat Mar 21 2020 songnannan <songnannan2@huawei.com> - 1.4.2-2
 - bugfix about update
 
