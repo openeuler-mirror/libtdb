@@ -1,6 +1,6 @@
 Name: libtdb
 Version: 1.4.2
-Release: 2
+Release: 3
 Summary: The Tdb library
 License: LGPLv3+
 URL: http://tdb.samba.org/
@@ -89,6 +89,12 @@ make %{?_smp_mflags} check
 %ldconfig_scriptlets
 
 %changelog
+* Tue Aug 21 2020 openEuler Buildteam <buildteam@openeuler.org> - 1.4.2-3
+- Type:rebuild
+- ID:NA
+- SUG:NA
+- DESC:rebuild for requirement package update
+
 * Sat Mar 21 2020 songnannan <songnannan2@huawei.com> - 1.4.2-2
 - bugfix about update
 
