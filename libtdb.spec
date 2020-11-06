@@ -1,6 +1,6 @@
 Name: libtdb
 Version: 1.4.2
-Release: 3
+Release: 4
 Summary: The Tdb library
 License: LGPLv3+
 URL: http://tdb.samba.org/
@@ -8,6 +8,7 @@ Source: http://samba.org/ftp/tdb/tdb-%{version}.tar.gz
 
 BuildRequires: gcc libxslt docbook-style-xsl
 BuildRequires: python3-devel
+Requires: %{name}-help = %{version}
 Provides: bundled(libreplace)
 Obsoletes: python2-tdb < 1.4.2-1
 Obsoletes: python2-samba
@@ -89,6 +90,12 @@ make %{?_smp_mflags} check
 %ldconfig_scriptlets
 
 %changelog
+* Fri Nov 6 2020 shangyibin <shangyibin1@openeuler.org> - 1.4.2-4
+- Type:NA
+- ID:NA
+- SUG:NA
+- DESC:Adding help package to the installation dependency of the main package
+
 * Tue Aug 21 2020 openEuler Buildteam <buildteam@openeuler.org> - 1.4.2-3
 - Type:rebuild
 - ID:NA
