@@ -1,5 +1,5 @@
 Name: libtdb
-Version: 1.4.3
+Version: 1.4.5
 Release: 1
 Summary: The Tdb library
 License: LGPLv3+
@@ -89,7 +89,13 @@ make %{?_smp_mflags} check
 %ldconfig_scriptlets
 
 %changelog
-* Mon Jul 27 2020wenzhanli<wenzhanli2@huawei.com> - 1.4.3-1
+* Thu Nov 11 2021 shixuantong<shixuantong@huawei.com> - 1.4.5-1
+- Type:bugfix
+- ID:NA
+- SUG:NA
+- DESC:update version to 1.4.5
+
+* Mon Jul 27 2020 wenzhanli<wenzhanli2@huawei.com> - 1.4.3-1
 - Type:bugfix
 - ID:NA
 - SUG:NA
