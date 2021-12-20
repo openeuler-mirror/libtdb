@@ -1,6 +1,6 @@
 Name: libtdb
 Version: 1.4.5
-Release: 1
+Release: 2
 Summary: The Tdb library
 License: LGPLv3+
 URL: http://tdb.samba.org/
@@ -70,9 +70,7 @@ make %{?_smp_mflags} check
 %{_bindir}/tdbrestore
 
 %files -n python3-tdb
-%{python3_sitearch}/__pycache__/_tdb_text.cpython*.py[co]
-%{python3_sitearch}/tdb.cpython*.so
-%{python3_sitearch}/_tdb_text.py
+%{python3_sitearch}
 
 %files devel
 %{_includedir}/tdb.h
@@ -89,6 +87,12 @@ make %{?_smp_mflags} check
 %ldconfig_scriptlets
 
 %changelog
+* Sat Dec 18 2021 shixuantong<shixuantong@huawei.com> - 1.4.5-2
+- Type:bugfix
+- ID:NA
+- SUG:NA
+- DESC:fix build fail 
+
 * Thu Nov 11 2021 shixuantong<shixuantong@huawei.com> - 1.4.5-1
 - Type:bugfix
 - ID:NA
