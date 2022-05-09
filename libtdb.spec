@@ -1,6 +1,6 @@
 Name: libtdb
 Version: 1.4.5
-Release: 1
+Release: 2
 Summary: The Tdb library
 License: LGPLv3+
 URL: http://tdb.samba.org/
@@ -89,13 +89,16 @@ make %{?_smp_mflags} check
 %ldconfig_scriptlets
 
 %changelog
-* Thu Nov 11 2021 shixuantong<shixuantong@huawei.com> - 1.4.5-1
+* Mon May 9 2022 mylee <liweiganga@uniontech.com> - 1.4.5-2
+- fix spec changelog date
+
+* Thu Nov 11 2021 shixuantong <shixuantong@huawei.com> - 1.4.5-1
 - Type:bugfix
 - ID:NA
 - SUG:NA
 - DESC:update version to 1.4.5
 
-* Mon Jul 27 2020 wenzhanli<wenzhanli2@huawei.com> - 1.4.3-1
+* Mon Jul 27 2020 wenzhanli <wenzhanli2@huawei.com> - 1.4.3-1
 - Type:bugfix
 - ID:NA
 - SUG:NA
@@ -104,7 +107,7 @@ make %{?_smp_mflags} check
 * Sat Mar 21 2020 songnannan <songnannan2@huawei.com> - 1.4.2-2
 - bugfix about update
 
-* Sat Feb 11 2020 openEuler Buildteam <buildteam@openeuler.org> - 1.4.2-1
+* Mon Feb 17 2020 openEuler Buildteam <buildteam@openeuler.org> - 1.4.2-1
 - update to 1.4.2-1, drop python2 support
 
 * Wed Sep 11 2019 openEuler Buildteam <buildteam@openeuler.org> - 1.3.16-3
