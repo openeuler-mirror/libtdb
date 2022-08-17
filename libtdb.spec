@@ -1,6 +1,6 @@
 Name: libtdb
-Version: 1.4.5
-Release: 3
+Version: 1.4.7
+Release: 1
 Summary: The Tdb library
 License: LGPLv3+
 URL: http://tdb.samba.org/
@@ -87,6 +87,9 @@ make %{?_smp_mflags} check
 %ldconfig_scriptlets
 
 %changelog
+* Wed Aug 17 2022 YukariChiba <i@0x7f.cc> - 1.4.7-1
+- Upgrade version to 1.4.7
+
 * Tue May 10 2022 mylee <liweiganga@uniontech.com> - 1.4.5-3
 - fix spec changelog date
 
